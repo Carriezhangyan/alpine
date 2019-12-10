@@ -1,0 +1,11 @@
+# /etc/exports
+#
+# See exports(5) for a description.
+
+# use exportfs -arv to reread
+#/export    192.168.1.10(rw,no_root_squash)
+
+/opt    *(rw,no_root_squash,no_subtree_check,fsid=0)
+#/opt/share1    *(rw,no_root_squash,no_subtree_check)
+#/opt/share2    *(rw,no_root_squash,no_subtree_check)
+
